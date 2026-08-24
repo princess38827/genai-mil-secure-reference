@@ -1,3 +1,5 @@
+@@ -0,0 +1 @@
+# genai-mil-secure-reference
 GenAI.mil Security Architecture — Secure Scaling Reference (IL5 → IL6/IL7)
 Reference Implementation & Architecture Analysis
 Unclassified, based on public FedRAMP High, DoD SRG, NIST AI RMF, and Zero Trust standards.
