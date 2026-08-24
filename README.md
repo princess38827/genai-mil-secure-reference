@@ -6,7 +6,18 @@ Unclassified, based on public FedRAMP High, DoD SRG, NIST AI RMF, and Zero Trust
 
 This repo models how the Department of War's GenAI.mil platform safely scales commercial frontier AI (Gemini for Government, OpenAI, Anthropic, Meta Llama Gov) across a workforce of millions without risking national security data spillage.
 
-Image not available
+The hardest part of scaling GenAI.mil isn't model capability — it's governance.
+
+How do you let millions of personnel build hundreds of thousands of agents without an agent getting admin privileges or leaking CUI?
+
+I put together an unclassified reference architecture that models the approach:
+• IL5 CUI Hub as primary entry point, with secure pipelines to IL6 (SIPRNet) / IL7 (JWICS)
+• ZTA enforced by CAC + continuous verification
+• Input/output sanitization per Prohibited Data Notice
+• Sovereign hosting — prompts never train commercial models
+• MCP + RBAC + continuous red-teaming for vibe-coding controls
+
+Full code + diagram + NIST RMF crosswalk in the repo. Built to learn in public and contribute to the conversation around secure enterprise AI.
 
 Live Repo: https://github.com/princess38827/genai-mil-secure-reference
 
